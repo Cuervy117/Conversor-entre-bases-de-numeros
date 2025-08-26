@@ -1,0 +1,126 @@
+:root{
+    --primaryColor: #F8FAFC;
+    --secondaryColor: #D9EAFD;
+    --tertiaryColor: #BCCCDC;
+    --buttonColor: #9AA6B2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section {
+    flex: 30%;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.output-section {
+    flex: 40%;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: upper;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.header-text {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--buttonColor);
+}
+
+.body-text {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--buttonColor);
+    margin: 10px 0;
+}
+
+.input-text {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--tertiaryColor);
+    margin: 0 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+}
+
+.input-number {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--tertiaryColor);
+    margin: 0 10px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+}
+
+.creditos{
+    flex: 10%;
+    background-color: var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: upper;
+    padding: 20px;
+    width: 100%;
+    font-family: "Inter", serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--buttonColor);
+    color: var(--primaryColor);
+}
